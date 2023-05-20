@@ -1,0 +1,42 @@
+{% extends 'base1.html' %}
+{% block head %}
+        <title>AtrakFik</title>
+        <link rel="icon" type="image/x-icon" href="../static/img/favicon.ico">
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .images{
+    position: absolute;
+    z-index: -1;
+  }
+  .container-fluid{
+    margin-right: 200px;
+  }
+  h1,h2,p{
+    color: #fff;
+  }
+</style>
+
+          
+            <div class="container-fluid pl-0">
+              <div>
+                <img src="../static/img/phone.jpg" height="600px" width="100%" class="images" alt="">
+              </div>
+              <div class="container" id = "heading">
+                <h1 class="text-white">Worried about online shoping?</h1>
+                <h2>We are providing Products Review...</h2>
+                <p>All type of product reviews. Just search and find your product</p>
+                <div class="container" id="forms">
+                <form class="form-inline my-2 my-lg-0" action="/result" method="POST">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name  = "content" id = "content">
+                  <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div>
+              </div>
+
+            </div>
+
+
+{% endblock %}
